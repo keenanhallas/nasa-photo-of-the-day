@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 function Credit(props) {
-    const [credit, setCredit] = useState(props.copyright);
+    const [credit, setCredit] = useState(props.credit);
 
     return (
         <div className="credit">

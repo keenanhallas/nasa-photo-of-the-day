@@ -31,7 +31,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title={mockData.title}/>
+      <Header title={mockData.title} credit={mockData.copyright} date={mockData.date}/>
     </div>
   );
 }

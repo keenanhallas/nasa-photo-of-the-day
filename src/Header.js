@@ -7,6 +7,8 @@ function Header(props) {
     return (
         <div className="header">
             <Title title={props.title}/>
+            <Credit credit={props.credit} />
+            <Date date={props.date}/>
         </div>
     );
 }
