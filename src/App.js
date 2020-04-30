@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 import Header from "./Header.js";
+import ImgSection from "./ImgSection";
 
 function App() {
   const [imgData, setImgData] = useState({});
@@ -32,6 +33,7 @@ function App() {
   return (
     <div className="App">
       <Header title={mockData.title} credit={mockData.copyright} date={mockData.date}/>
+      <ImgSection url={mockData.url} title={mockData.title}/>
     </div>
   );
 }

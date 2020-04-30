@@ -5,7 +5,7 @@ function Credit(props) {
 
     return (
         <div className="credit">
-            <h2>A photo by {credit}</h2>
+            <h2>Photo by {credit}</h2>
         </div>
     );
 }
