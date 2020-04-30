@@ -1,8 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
-function Title(props) {
-    const [title, setTitle] = useState(props.title);
-
+function Title({title}) {
     return (
         <div className="title">
             <h1>{title}</h1>

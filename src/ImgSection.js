@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React from "react";
 
-function ImgSection(props) {
-    const [image, setImage] = useState(props);
-    
+function ImgSection({url, hdurl, title}) {
     return (
         <div className="img-section">
-            <img src={image.url} alt={image.title}/>
+            <a href={hdurl}>
+                <img src={url} alt={title}/>
+            </a>
         </div>
     );
 }

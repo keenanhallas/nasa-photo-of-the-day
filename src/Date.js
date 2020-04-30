@@ -1,8 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
-function Date(props) {
-    const [date, setDate] = useState(props.date);
-    
+function Date({date}) {
     return (
         <div className="date">
             <h3>NASA APOD for {date}</h3>

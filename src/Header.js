@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import Title from "./Title"
 import Credit from "./Credit";
 import Date from "./Date";
 
-function Header(props) {
+function Header({title, credit, date}) {
     return (
         <div className="header">
-            <Title title={props.title}/>
-            <Credit credit={props.credit} />
-            <Date date={props.date}/>
+            <Title title={title}/>
+            <Credit credit={credit} />
+            <Date date={date}/>
         </div>
     );
 }

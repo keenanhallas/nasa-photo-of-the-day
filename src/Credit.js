@@ -1,8 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 
-function Credit(props) {
-    const [credit, setCredit] = useState(props.credit);
-
+function Credit({credit}) {
     return (
         <div className="credit">
             <h2>Photo by {credit}</h2>
