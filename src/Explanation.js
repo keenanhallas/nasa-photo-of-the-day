@@ -2,12 +2,13 @@ import React from "react";
 import styled from "styled-components";
 
 const ExplanationWrapper = styled.div`
-    width: 60%;
+    width: 75%;
     margin: 20px auto;
     border-radius: 50px;
     padding: 1% 3%;
     border: 2px solid grey;
     text-align: justify;
+    box-sizing: border-box;
 `
 
 const CustomP = styled.p`
