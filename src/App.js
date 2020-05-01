@@ -2,16 +2,23 @@ import React, {useState, useEffect} from "react";
 import "./App.css";
 import axios from "axios";
 import Header from "./Header.js";
+//import {titleWrapper} from "./Title"
 import ImgSection from "./ImgSection";
-import Explanation from "./Explanation"
+import Explanation from "./Explanation";
+import styled from "styled-components";
+
+const StyledApp = styled.div`
+
+`
 
 function App() {
   const [imgData, setImgData] = useState({});
 
   useEffect(() => {
       axios
-        .get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
+        .get("https://api.nasa.gov/planetary/apod?api_key=Zso8CgdIgBFignxhriX5d0vNQhc4g10lD4fG1PFJ")
         .then((res) => {
+          console.log(res);
           setImgData(res.data);
         })
         .catch((err) => {
@@ -33,11 +40,11 @@ function App() {
   console.log(imgData)
   
   return (
-    <div className="App">
+    <StyledApp className="App">
       <Header title={imgData.title} credit={imgData.copyright} date={imgData.date}/>
       <ImgSection url={imgData.url} hdurl={imgData.hdurl} title={imgData.title}/>
       <Explanation explanation={imgData.explanation}/>
-    </div>
+    </StyledApp>
   );
 }
 

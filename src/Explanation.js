@@ -1,11 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+
+const ExplanationWrapper = styled.div`
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 50px;
+    padding: 1% 3%;
+    border: 2px solid grey;
+    text-align: justify;
+`
+
+const CustomP = styled.p`
+font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.5;
+`
 
 function Explanation({explanation}) {
     return (
-        <div className="explanation">
-            <h4>Image Info:</h4>
-            <p>{explanation}</p>
-        </div>
+        <ExplanationWrapper className="explanation">
+            <CustomP>{explanation}</CustomP>
+        </ExplanationWrapper>
     );
 }
 

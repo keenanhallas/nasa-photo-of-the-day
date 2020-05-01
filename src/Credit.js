@@ -1,10 +1,16 @@
 import React from "react";
+import styled from "styled-components"
+
+const CreditWrapper = styled.div`
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+`
 
 function Credit({credit}) {
     return (
-        <div className="credit">
+        <CreditWrapper className="credit">
             <h2>Photo by {credit}</h2>
-        </div>
+        </CreditWrapper>
     );
 }
 
